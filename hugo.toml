@@ -1,0 +1,58 @@
+baseURL = 'https://notesfromahuman.dev/'
+languageCode = 'en-us'
+title = 'Notes From a Human - a blog by Luan James'
+theme = "PaperMod"
+
+[params]
+  description = "Sharing notes on AI, software, and other things. — A blog by Luan James, a human."
+  homeInfoParams = { "Title" = "Hi there 👋", "Content" = "Sharing notes on AI, software, and other things. — A blog by Luan James, a human." }
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = true
+  ShowAllPagesInArchive = true
+  ShowPageNums = true
+  ShowFullTextinRSS = true
+  ShowRssButtonInSectionTermList = true
+  ShowWordCount = true
+  ShowLastMod = true
+  UseHugoToc = true
+  profileMode = { "enabled" = false }
+  socialIcons = [
+    { "name" = "github", "url" = "https://github.com/LuanJames" },
+    { "name" = "twitter", "url" = "https://x.com/LuanJames" },
+    { "name" = "rss", "url" = "/index.xml" }
+  ]
+  [params.assets]
+    disableHLJS = true
+    disableScrollBarStyle = true
+  [params.label]
+    text = "Home"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+  [params.analytics]
+    google = { "SiteVerificationTag" = "XYZ" }
+    bing = { "SiteVerificationTag" = "XYZ" }
+    yandex = { "SiteVerificationTag" = "XYZ" }
+  [params.cover]
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
+  [params.editPost]
+    URL = "https://github.com/<path_to_repo>/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]
+  [outputs]
+    home = [ "HTML", "RSS", "JSON" ]
+
