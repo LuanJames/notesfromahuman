@@ -34,10 +34,6 @@ theme = "PaperMod"
     text = "Notes From a Human"
     icon = "/apple-touch-icon.png"
     iconHeight = 35
-  [params.analytics]
-    google = { "SiteVerificationTag" = "G-BS5262J5K4" }
-    bing = { "SiteVerificationTag" = "XYZ" }
-    yandex = { "SiteVerificationTag" = "XYZ" }
   [params.cover]
     hidden = true
     hiddenInList = true
@@ -57,3 +53,6 @@ theme = "PaperMod"
   [outputs]
     home = [ "HTML", "RSS", "JSON" ]
 
+[services]
+  [services.googleAnalytics]
+    ID = 'G-BS5262J5K4'
